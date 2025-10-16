@@ -36,6 +36,6 @@ public class Ejercicio24 {
         }
 
         // Mostrar la cantidad de múltiplos encontrados
-        System.out.println("\n Total de múltiplos de 3: " + contador);
+        System.out.println("\n  Total de múltiplos de 3: " + contador);
     }
 }
