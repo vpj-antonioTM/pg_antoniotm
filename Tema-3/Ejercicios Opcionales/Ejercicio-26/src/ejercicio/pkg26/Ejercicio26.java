@@ -10,7 +10,7 @@ public class Ejercicio26 {
          int suma = 0;
 
         for (int i = 111; i <= 222; i++) {
-            if (i % 2 != 0) {
+            if (i % 2 == 1) {
                 suma += i;
             }
         }
