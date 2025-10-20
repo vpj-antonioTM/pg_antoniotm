@@ -14,7 +14,6 @@ public class Ejercicio25 {
                 suma += i;
             }
         }
-
         System.out.println("La suma de los numeros pares entre 17 y 139 es: " + suma);
     }
 }
