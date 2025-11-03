@@ -10,8 +10,6 @@ public class Ejercicio19 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String[] dias = {"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"};
-        
         Scanner entrada = new Scanner (System.in);
         System.out.print("Introduzca un dia de la semana: ");
         String diaSemana = entrada.nextLine();
