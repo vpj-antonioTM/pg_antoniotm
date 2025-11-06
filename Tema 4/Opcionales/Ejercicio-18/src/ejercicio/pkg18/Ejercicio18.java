@@ -1,6 +1,5 @@
 package ejercicio.pkg18;
 
-import com.sun.nio.file.SensitivityWatchEventModifier;
 import java.util.Scanner;
 
 public class Ejercicio18 {
