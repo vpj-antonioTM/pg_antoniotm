@@ -14,14 +14,11 @@ public class EjermploTema5 {
             
              System.out.println(" ");
             
-            Bicicleta bici2 = new Bicicleta ();
-            bici2.setMarca ("Canodale");
-            bici2.setColor("Roja");
-            bici2.setTipo("Carretera");
-            bici2.setAntiguedad (15);
+            Bicicleta bici2 = new Bicicleta ("Canodale",  "Roja,", "Carretera", 15);
+
             bici2.mostrarBicicleta();
             
-            System.out.println(" ");
+            System.out.println(bici2.toString());
             
             bici1.mostrarAntiguedad();
             bici2.mostrarAntiguedad();
