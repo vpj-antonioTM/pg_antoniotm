@@ -72,7 +72,10 @@ public class Bicicleta {
 
     @Override
     public String toString() {
-        return "Bicicleta{" + "marca=" + marca + ", color=" + color + ", tipo=" + tipo + ", antiguedad=" + antiguedad + '}';
+        return "Bicicleta{" + "marca=" + marca 
+                + ", color=" + color 
+                + ", tipo=" + tipo 
+                + ", antiguedad=" + antiguedad + '}';
     }
    
 }
