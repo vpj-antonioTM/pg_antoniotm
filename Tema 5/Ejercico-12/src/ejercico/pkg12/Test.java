@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 class Triangulo {
 
-    private double cateto1;
-    private double cateto2;
+    private final double cateto1;
+    private final double cateto2;
     
     //Constructor que almacena catetos
     public Triangulo(double cateto1, double cateto2) {
@@ -18,7 +18,7 @@ class Triangulo {
     
     //Metodo para calcular la hipotenusa
     public double calculaHipotenusa() {
-        return Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
+        return Math.hypot(cateto1, cateto2);
     }
     
     //Metodo mostrar resultados

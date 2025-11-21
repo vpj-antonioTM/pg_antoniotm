@@ -7,7 +7,7 @@ class Direccion {
     private final int piso;
     private final String ciudad;
 
-    // Constructor
+    // Constructor por defecto
     public Direccion(String calle, int numero, int piso, String ciudad) {
         this.calle = calle;
         this.numero = numero;
