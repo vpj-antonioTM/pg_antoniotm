@@ -2,7 +2,7 @@ package ejercicio.pkg24;
 
 // Clase hija que hereda de Producto
 public class ProductioFresco extends Producto {
-    
+
     // Atributos propios de productos frescos
     private int fechaEnv;       // Fecha de envasado
     private String paisOrigen;  // País de origen
@@ -13,7 +13,7 @@ public class ProductioFresco extends Producto {
         this.fechaEnv = 0;
         this.paisOrigen = "0";
     }
-    
+
     // Constructor con parámetros
     public ProductioFresco(int fechaEnv, String paisorig, String fechaCad, int numLote) {
         super(fechaCad, numLote);   // Inicializa atributos heredados
