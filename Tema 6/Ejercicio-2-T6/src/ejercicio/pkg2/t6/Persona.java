@@ -1,7 +1,7 @@
 package ejercicio.pkg2.t6;
 
 public abstract class Persona {
-    String nombre;
+     private String nombre;
 
     public Persona() {
         this.nombre = "0";

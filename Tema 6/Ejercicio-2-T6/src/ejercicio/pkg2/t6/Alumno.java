@@ -9,7 +9,7 @@ public class Alumno extends Persona{
         this.grupo = "0";
     }
 
-    public Alumno(String grupo, String nombre) {
+    public Alumno(String nombre, String grupo) {
         super(nombre);
         this.grupo = grupo;
     }
@@ -24,7 +24,7 @@ public class Alumno extends Persona{
     
     @Override
     public String saludar() {
-        return "Hola, soy el profesor " + nombre + " y soy de la especialidad de " + grupo;
+        return "Hola, soy el Alumno " + getNombre() + " y soy de la especialidad de " + grupo;
     }
     
     

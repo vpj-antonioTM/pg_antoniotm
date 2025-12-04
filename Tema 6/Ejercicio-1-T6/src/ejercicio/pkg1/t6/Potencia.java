@@ -26,7 +26,7 @@ public class Potencia extends Calculadora {
 
     @Override
     public void realizarOperacion() {
-        double resultado = Math.pow(numero, exponente);
-        System.out.println("Resultado de la potencia: " + resultado);
+        double resultado = Math.pow(getNumero(), exponente);
+         System.out.println("Resultado de la potencia: " + getNumero() + " * " + exponente + " = " + resultado);
     }
 }

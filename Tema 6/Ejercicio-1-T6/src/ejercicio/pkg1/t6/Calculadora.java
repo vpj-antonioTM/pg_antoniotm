@@ -1,7 +1,7 @@
 package ejercicio.pkg1.t6;
 
 public abstract class Calculadora {
-    protected double numero;
+    private double numero;
 
     // Constructor por defecto
     public Calculadora() {
@@ -24,5 +24,10 @@ public abstract class Calculadora {
 
     // Método abstracto
     public abstract void realizarOperacion();
+    
+    //Mostrar
+    @Override
+    public String toString() {
+        return "Calculadora{" + "numero=" + numero + '}';
+    }
 }
-

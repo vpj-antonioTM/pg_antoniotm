@@ -14,7 +14,7 @@ public class TestFiguras {
         System.out.println("Hipotenusa: " + t.calcularHipotenusa());
         System.out.println("Tipo de triangulo: " + t.tipoTriangulo());
 
-        System.out.println("\n--- Usando polimorfismo ---");
+        System.out.println("\nUsando polimorfismo");
 
         FiguraGeometrica f1 = new Circulo("Negro", 2.5);
         FiguraGeometrica f2 = new Rectangulo("Gris", 7, 3);

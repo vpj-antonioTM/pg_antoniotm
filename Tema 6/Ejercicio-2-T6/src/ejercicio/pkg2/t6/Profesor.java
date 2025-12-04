@@ -23,6 +23,6 @@ public class Profesor extends Persona {
 
     @Override
     public String saludar() {
-        return "Hola, soy el profesor " + nombre + " y soy de la especialidad de " + especialidad;
+        return "Hola, soy el profesor " + getNombre() + " y soy de la especialidad de " + especialidad;
     }
 }

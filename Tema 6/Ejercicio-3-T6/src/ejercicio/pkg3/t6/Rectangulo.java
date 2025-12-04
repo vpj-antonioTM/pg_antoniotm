@@ -25,11 +25,19 @@ public class Rectangulo extends FiguraGeometrica {
     public void setBase(double base) { this.base = base; }
     public void setAltura(double altura) { this.altura = altura; }
 
+    //Mostrar
+    @Override
+    public String toString() {
+        return super.toString() + "Rectangulo{" + "base=" + base + ", altura=" + altura + '}';
+    }
+
+    //Calcular Area
     @Override
     public double calcularArea() {
         return base * altura;
     }
 
+    //Calcular Perimetro
     @Override
     public double calcularPerimetro() {
         return 2 * (base + altura);

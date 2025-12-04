@@ -26,7 +26,6 @@ public class Multiplicacion extends Calculadora {
 
     @Override
     public void realizarOperacion() {
-        double resultado = numero * multiplicador;
-        System.out.println("Resultado de la multiplicacion: " + resultado);
+        System.out.println("Resultado de la multiplicacion: " + getNumero() + " * " + multiplicador + " = " + (getNumero() * multiplicador));
     }
 }

@@ -26,7 +26,6 @@ public class Suma extends Calculadora {
 
     @Override
     public void realizarOperacion() {
-        double resultado = numero + sumando;
-        System.out.println("Resultado de la suma: " + resultado);
+        System.out.println("Resultado de la suma: " + getNumero() + " * " + sumando + " = " + (getNumero() + sumando));
     }
 }
