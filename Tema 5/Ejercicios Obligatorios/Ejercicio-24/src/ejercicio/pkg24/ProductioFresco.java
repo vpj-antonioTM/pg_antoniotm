@@ -13,7 +13,7 @@ public class ProductioFresco extends Producto {
         this.fechaEnv = 0;
         this.paisOrigen = "0";
     }
-
+    
     // Constructor con parámetros
     public ProductioFresco(int fechaEnv, String paisorig, String fechaCad, int numLote) {
         super(fechaCad, numLote);   // Inicializa atributos heredados
