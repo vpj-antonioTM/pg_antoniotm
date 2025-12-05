@@ -28,7 +28,7 @@ public class Test {
         System.out.println(ovi.obtenerMensajeOviparo());
         ovi.ponerHuevo();
         ovi.mostrarNumHuevos();
-
+        
         System.out.println(vol.obtenerMensajeVuelo());
         vol.aumentarAlturaVuelo();
         vol.mostrarAlturaVuelo();

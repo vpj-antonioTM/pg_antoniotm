@@ -31,8 +31,8 @@ public class Murcielago extends Mamifero implements Volador{
     }
 
     @Override
-    public void obtenerMensajeVuelo() {
-        System.out.println("El murcielago es un animal volador");
+    public String obtenerMensajeVuelo() {
+        return "El murcielago es un animal volador";
     }
 
     @Override

@@ -15,8 +15,8 @@ public class Televisor implements controlRemoto {
 
     public Televisor() {
         this.encendido = false;
-        this.canal = 0;
-        this.volumen = 0;
+        this.canal = 2;
+        this.volumen = 50;
     }
 
     public Televisor(boolean encendido, int canal, int volumen) {
@@ -94,4 +94,8 @@ public class Televisor implements controlRemoto {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Televisor{" + "encendido=" + encendido + ", canal=" + canal + ", volumen=" + volumen + '}';
+    }
 }

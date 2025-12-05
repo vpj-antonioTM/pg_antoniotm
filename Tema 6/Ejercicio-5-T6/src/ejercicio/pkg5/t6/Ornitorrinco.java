@@ -31,8 +31,8 @@ public class Ornitorrinco extends Mamifero implements Oviparo{
     }
 
     @Override
-    public void obtenerMensajeOviparo() {
-        System.out.println("El ornitorrinco es un mamifero oviparo");
+    public String obtenerMensajeOviparo() {
+        return "El ornitorrinco es un mamifero oviparo";
     }
 
     @Override
