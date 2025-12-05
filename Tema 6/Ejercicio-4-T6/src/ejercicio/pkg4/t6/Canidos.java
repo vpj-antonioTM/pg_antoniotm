@@ -1,13 +1,13 @@
 package ejercicio.pkg4.t6;
 
-public class Felino extends Animal{
+public class Canidos extends Animal{
     
     private String Sonido;
     private String alimentacion;
     private String habitat;
     private String nombreCientifico;
 
-    public Felino(String Sonido, String alimentacion, String habitat, String nombreCientifico, String nombre, int edad, float peso) {
+    public Canidos(String Sonido, String alimentacion, String habitat, String nombreCientifico, String nombre, int edad, float peso) {
         super(nombre, edad, peso);
         this.Sonido = Sonido;
         this.alimentacion = alimentacion;
@@ -47,19 +47,24 @@ public class Felino extends Animal{
         this.nombreCientifico = nombreCientifico;
     }
 
+    @Override
     public void mostrarSonido() {
         System.out.println("Sonido: "+ this.Sonido);
     }
     
+    @Override
     public void alimentacion() {
         System.out.println("Alimmentacion: " + this.alimentacion);
     }
 
+    @Override
     public void habitat() {
         System.out.println("Habitat: " + this.habitat);
     }
 
+    @Override
     public void nombreCientifico() {
         System.out.println("Nombre Cientifico: " + this.nombreCientifico);
     }
+    
 }

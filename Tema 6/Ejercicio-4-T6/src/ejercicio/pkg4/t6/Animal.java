@@ -1,27 +1,17 @@
 package ejercicio.pkg4.t6;
 
 
-public abstract class  Animal {
+public abstract class Animal {
     private String nombre;
     private int edad;
-    private double peso;
+    private float peso;
 
-    
-    // Constructor por defecto
-    public Animal() {
-        this.nombre = "Desconocido";
-        this.edad = 0;
-        this.peso = 0.0;
-    }
-
-    // Constructor parametrizado
-    public Animal(String nombre, int edad, double peso) {
+    public Animal(String nombre, int edad, float peso) {
         this.nombre = nombre;
         this.edad = edad;
         this.peso = peso;
     }
 
-    //Getters and Setters
     public String getNombre() {
         return nombre;
     }
@@ -38,27 +28,26 @@ public abstract class  Animal {
         this.edad = edad;
     }
 
-    public double getPeso() {
+    public float getPeso() {
         return peso;
     }
 
-    public void setPeso(double peso) {
+    public void setPeso(float peso) {
         this.peso = peso;
     }
     
-    //Metodos abstractos
     public abstract void mostrarSonido();
-    public abstract void mostrarAlimentacion();
-    public abstract void mostrarHabitat();
-    public abstract void mostrarNombreCientifico();
 
-    public void mostrarDatos() {
-        System.out.println(this.toString());
-    }
+    public abstract void alimentacion();
     
-    //Mostrar
+    public abstract void habitat();
+    
+    public abstract void nombreCientifico();
+    
     @Override
     public String toString() {
         return "Animal{" + "nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + '}';
     }
+    
 }
+
