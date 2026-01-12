@@ -6,22 +6,25 @@ package ejercicio.pkg6.t6;
  */
 public class Libro implements Transformable {
 
+    //Atributos
     private String titulo;
     private String autor;
     private String genero;
-
+    
+    //Constructores
     public Libro() {
-        this.titulo = "0";
-        this.autor = "0";
-        this.genero = "0";
+        this.titulo = "";
+        this.autor = "";
+        this.genero = "";
     }
-
+    
     public Libro(String titulo, String autor, String genero) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
     }
-
+    
+    //Getters / Setters
     public String getTitulo() {
         return titulo;
     }
@@ -44,67 +47,67 @@ public class Libro implements Transformable {
 
     public void setGenero(String genero) {
         this.genero = genero;
-    }
-
-    @Override
-    public String toString() {
-        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", genero=" + genero + '}';
-    }
+    }  
 
     @Override
     public String concatenarTodo() {
-        return titulo.toLowerCase() + " # " + autor.toLowerCase() + " # " + genero.toLowerCase();
+        return titulo + "#" + autor + "#" + genero;
     }
 
     @Override
     public String obtenerIniciales() {
-        String resultado = "";
-        if (!titulo.isEmpty()) {
-            Character.toLowerCase(titulo.charAt(0));
-        }
-        if (!autor.isEmpty()) {
-            Character.toLowerCase(autor.charAt(0));
-        }
-        if (!genero.isEmpty()) {
-            Character.toLowerCase(genero.charAt(0));
-        }
-        return resultado;
+        return "" + titulo.charAt(0) + autor.charAt(0) + genero.charAt(0);
     }
 
     @Override
-    public int contarVocales() {
-        return contar(titulo) + contar(autor) + contar(genero);
-    }
-
-    private int contar(String cad) {
-        int c = 0;
-        cad = cad.toLowerCase();
-        for (int i = 0; i < cad.length(); i++) {
-            if ("aeiou".indexOf(cad.charAt(i)) != -1) {
-                c++;
+    public void contarVocales() {
+        String datos = concatenarTodo().toLowerCase();
+        int contVocales = 0;
+        
+        for(int i=0; i<datos.length(); i++) {
+            if(datos.charAt(i) == 'a'
+                    || datos.charAt(i) == 'e' 
+                    || datos.charAt(i) == 'i'
+                    || datos.charAt(i) == 'o'
+                    || datos.charAt(i) == 'u') {
+                    contVocales++;
             }
         }
-        return c;
+        
+        System.out.println("El libro tiene " + contVocales + " vocales");
     }
 
     @Override
     public String obtenerCadenaMasLarga() {
-        String mas = titulo;
-        if (autor.length() > mas.length()) {
-            mas = autor;
+        String cadenaMasLarga = titulo;
+        
+        if(autor.length() > cadenaMasLarga.length()) {
+            cadenaMasLarga = autor;
+        } else if (genero.length() > cadenaMasLarga.length()) {
+            cadenaMasLarga = genero;
         }
-        if (genero.length() > mas.length()) {
-            mas = genero;
-        }
-        return mas.toLowerCase();
+        
+        return cadenaMasLarga;
     }
 
     @Override
     public boolean buscarCadena(String cadena) {
-        String buscada = cadena.toLowerCase();
-        return titulo.toLowerCase().equals(buscada)
-                || autor.toLowerCase().equals(buscada)
-                || genero.toLowerCase().equals(buscada);
+        boolean enc = false;
+        
+        if(cadena.equalsIgnoreCase(titulo) 
+                || cadena.equalsIgnoreCase(autor)
+                || cadena.equalsIgnoreCase(genero)) {
+            enc = true;
+        }
+        
+        return enc;      
     }
-
+    
+    //toString
+    @Override
+    public String toString() {
+        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", genero=" + genero + '}';
+    }  
+   
 }
+
