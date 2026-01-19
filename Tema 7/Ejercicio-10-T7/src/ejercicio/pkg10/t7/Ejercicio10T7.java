@@ -36,12 +36,14 @@ public class Ejercicio10T7 {
 
     // Método que sustituye los valores repetidos por 0
     public static void sustituirRepetidos(int[] vector) {
-        for (int i = 0; i < vector.length; i++) { // El primer for toma un número
-            for (int j = i + 1; j < vector.length; j++) { // Compara con los de la derecha
-                if (vector[i] == vector[j]) { // Si encuentra repetido, lo cambia a 0
-                    vector[j] = 0;
+        for (int i = 0; i < vector.length; i++) {
+            for (int j = i + 1; j < vector.length; j++) {
+                if (vector[i] == vector[j] && vector[i] != 0) {
+                    vector[i] = 0; // También anulamos el número original
+                    vector[j] = 0; // Y el repetido
                 }
             }
         }
     }
+
 }
