@@ -15,14 +15,14 @@ public class Ejercicio02T8 {
         int longitud = 0;
         boolean valido = false;
 
-        while (!valido) { //Se repite hasta que se introduzca un valor valido
+        while (!valido) {  //Se repite hasta que se introduzca un valor valido
             try {
                 System.out.print("Introduce la longitud del array (1-10): ");
-                longitud = entrada.nextInt(); //Pedimos la longitud
+                longitud = entrada.nextInt();  //Pedimos la longitud
 
                 // Comprobamos que esté en el rango correcto
                 if (longitud >= 1 && longitud <= 10) {
-                    valido = true; //Si es correcto salimos
+                    valido = true;  //Si es correcto salimos
                 } else {
                     System.out.println("El número debe estar entre 1 y 10.");
                 }
@@ -30,11 +30,11 @@ public class Ejercicio02T8 {
             } catch (InputMismatchException e) {
                 //Si se introduce un valor no valido entrar aqui
                 System.out.println("Error: debes introducir un número entero.");
-                entrada.nextLine(); // Limpiar el buffer
+                entrada.nextLine();  // Limpiar el buffer
             }
         }
 
-        return longitud; //Devolvenos la longitud
+        return longitud;  //Devolvenos la longitud
     }
 
     // Metodo que rellena el array con numeros aleatorios entre 1 y 6
@@ -48,7 +48,7 @@ public class Ejercicio02T8 {
     public static void mostrarArray(int[] array) {
         System.out.print("Contenido del array: ");
         for (int num : array) {
-            System.out.print(num + " "); //Vamos mostrando cada numero
+            System.out.print(num + " ");  //Vamos mostrando cada numero
         }
         System.out.println();
     }

@@ -48,15 +48,16 @@ public class Ejercicio01T8 {
     }
 
     public static class CalcularMedia {
+
         public static int calcularMedia(Asignatura[] asignaturas) {
-            
+
             int suma = 0; //Acumula las notas
 
             //Se recorre el array para ir sumandos las notas
             for (int i = 0; i < asignaturas.length; i++) {
                 suma += asignaturas[i].getNota();
             }
-            
+
             //Devuelve la media
             return suma / asignaturas.length;
         }
@@ -74,7 +75,7 @@ public class Ejercicio01T8 {
             "Sistemas informaticos",
             "Formacion y orientacion laboral"
         };
-        
+
         //Array donde se guardan las asignaturas
         Asignatura[] asignaturas = new Asignatura[6];
 
@@ -91,5 +92,5 @@ public class Ejercicio01T8 {
         //Mostramos el resultado
         System.out.println("Su nota media es de: " + media);
     }
-    
+
 }
