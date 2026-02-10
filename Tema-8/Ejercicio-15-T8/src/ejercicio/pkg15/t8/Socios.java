@@ -8,19 +8,25 @@ package ejercicio.pkg15.t8;
  *
  * @author antonio
  */
+
 public class Socios {
+
     private String nombre;
-    private float precioAbonado;
-    
-    public Socios(){
-        nombre="";
-        precioAbonado=0;
-    }
-    public Socios(String no,float pA){
-        nombre=no;
-        precioAbonado=pA;
+    private double precioAbonado;
+
+    // Constructor por defecto
+    public Socios() {
+        this.nombre = "Sin nombre";
+        this.precioAbonado = 0;
     }
 
+    // Constructor con parámetros
+    public Socios(String nombre, double precioAbonado) {
+        this.nombre = nombre;
+        this.precioAbonado = precioAbonado;
+    }
+
+    // Getter and Setter
     public String getNombre() {
         return nombre;
     }
@@ -29,16 +35,11 @@ public class Socios {
         this.nombre = nombre;
     }
 
-    public float getPrecioAbonado() {
+    public double getPrecioAbonado() {
         return precioAbonado;
     }
 
-    public void setPrecioAbonado(float precioAbonado) {
+    public void setPrecioAbonado(double precioAbonado) {
         this.precioAbonado = precioAbonado;
-    }
-
-    @Override
-    public String toString() {
-        return "Socios{" + "nombre=" + nombre + ", precioAbonado=" + precioAbonado + '}';
     }
 }
