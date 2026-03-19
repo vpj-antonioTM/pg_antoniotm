@@ -9,13 +9,14 @@ package cajafuerte;
  * @author alumno
  */
 public class Monedas {
+
     private int valor;
     private String material;
     private String pais;
 
     //Constructor por defecto
     public Monedas() {
-                this.valor = 0;
+        this.valor = 0;
         this.material = "0";
         this.pais = "0";
     }
@@ -26,7 +27,7 @@ public class Monedas {
         this.material = material;
         this.pais = pais;
     }
-    
+
     //Getters and Stters
     public int getValor() {
         return valor;
@@ -50,5 +51,5 @@ public class Monedas {
 
     public void setPais(String pais) {
         this.pais = pais;
-    }    
+    }
 }
